@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>2021</title>
+	<style>
+		body {
+			background: #d63447;
+		}
+
+		* {
+			font-family: Helvetica, sans-serif;
+
+		}
+
+		h2 {
+			text-align: center;
+			color: #f6eedf;
+		}
+
+		h3,
+		h5 {
+			margin: 0.25em;
+		}
+
+		section {
+			display: grid;
+			grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+			grid-gap: 2rem;
+		}
+
+		#recipes+section {
+			grid-template-columns: repeat(auto-fit, minmax(480px, 1fr));
+		}
+
+		#pictures+section {
+			display: block;
+			column-count: 2;
+			column-gap: 0;
+			line-height: 0;
+		}
+
+		@media (max-width: 1200px) {
+			#pictures+section {
+				column-count: 4;
+			}
+		}
+
+		@media (max-width: 1000px) {
+			#pictures+section {
+				column-count: 3;
+			}
+		}
+
+		@media (max-width: 800px) {
+			#pictures+section {
+				column-count: 2;
+			}
+		}
+
+		@media (max-width: 400px) {
+			#pictures+section {
+				column-count: 1;
+			}
+		}
+
+		#pictures+section img {
+			padding: 2px;
+			border: none;
+			width: 100%;
+			height: 100%;
+			object-fit: contain;
+			background: rgba(0, 0, 0, 0.4);
+		}
+
+		#pictures+section article {
+			padding: 0;
+			background: 0;
+			border: none;
+		}
+
+		article {
+			padding: 1em;
+			background: #d1cebd;
+			border-radius: 4px;
+		}
+
+		img {
+			box-sizing: border-box;
+			width: 100%;
+			max-height: 80vh;
+			object-fit: cover;
+			border: 4px solid black;
+		}
+
+		#recipes+section img {
+			max-height: 50vh;
+		}
+
+		table {
+			width: 100%;
+		}
+
+		th {
+			padding-top: 1em;
+			font-size: larger;
+		}
+
+		td {
+			padding: 0 0.25em;
+			line-height: 1.4;
+			border-bottom: 1px solid rgba(0, 0, 0, 0.4);
+		}
+
+		td:nth-child(1),
+		td:nth-child(2) {
+			width: 0;
+			white-space: nowrap;
+		}
+
+		td:nth-child(1) {
+			text-align: right;
+		}
+
+		ul {
+			font-size: smaller;
+		}
+
+		ol {
+			padding-top: 1em;
+		}
+
+		figure {
+			margin: 0;
+		}
+	</style>
+</head>
+
+<body>
+  <h2>
+    Name Our Plants!
+  </h2>
+  <a href="https://docs.google.com/forms/d/e/1FAIpQLSdTuz6vbi01UnYDTVjT0Om8a8ASv7VMIAK65VFe7Wt5rVZbMA/viewform">
+     Vote Here
+  </a>
+	<h2 id="books">Recommended Books</h2>
+	<section>
+		<article>
+			<img src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1565188992l/51190882._SX318_SY475_.jpg" />
+			<h3>The Express of Salt and Fortune</h3>
+			<h5>Nghi Vo</h5>
+			<ul>
+				<li>Fantasy</li>
+			</ul>
+		</article>
+		<article>
+			<img src="https://images-na.ssl-images-amazon.com/images/I/51YUq38byQL._SX342_SY445_QL70_ML2_.jpg" />
+			<h3>An Indigenous People's History of the United States</h3>
+			<h5>Roxanne Dunbar-Ortiz</h5>
+			<ul>
+				<li>Historical Nonfiction</li>
+			</ul>
+		</article>
+		<article>
+			<img src="https://m.media-amazon.com/images/I/41viPWEkULL.jpg" />
+			<h3>The Year of Magical Thinking</h3>
+			<h5>Joan Didion</h5>
+			<ul>
+				<li>Memoir</li>
+			</ul>
+		</article>
+		<article>
+			<img src="https://dglibrary.org/wp-content/uploads/2020/07/unnamed.jpg" />
+			<h3>The Expanse (series)</h3>
+			<h5>James S.A. Corey</h5>
+			<ul>
+				<li>Science Fiction</li>
+			</ul>
+		</article>
+		<article>
+			<img src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1436200674l/25332115._SY475_.jpg" />
+			<h3>The Sound of Gravel</h3>
+			<h5>Ruth Wariner</h5>
+			<ul>
+				<li>Memoir</li>
+			</ul>
+		</article>
+		<article>
+			<img src="https://images-na.ssl-images-amazon.com/images/I/91Lr4jsE4wL.jpg" />
+			<h3>The Last Boat Out of Shanghai</h3>
+			<h5>Helen Zia</h5>
+			<ul>
+				<li>Historical Nonfiction</li>
+			</ul>
+		</article>
+	</section>
+
+	<h2 id="recipes">Recommended Recipes</h2>
+	<section>
+		<article>
+			<h3>Honey-Lime Berry Salad</h3>
+			<h5>
+				<a href="https://www.tasteofhome.com/recipes/honey-lime-berry-salad/print/">
+					Taste of Home
+				</a>
+			</h5>
+			<img src="https://www.tasteofhome.com/wp-content/uploads/2018/01/Honey-Lime-Berry-Salad_exps36707_SD143204D12_05_5bC_RMS-1.jpg" />
+		</article>
+		<article>
+			<h3></h3>
+			<h5>
+				<a href="https://www.fitnessblender.com/articles/green-pasta-salad-nutrient-dense-fresh-easy">
+          Fitness Blender
+				</a>
+			</h5>
+			<img src="https://d18zdz9g6n5za7.cloudfront.net/blog/800/800-o_565_green-pasta-salad-nutrient-dense-fresh-and-easy.jpg" />
+		</article>
+		<article>
+			<h3>Garam Masala Cookies</h3>
+			<h5>
+				<a href="https://www.seletsucre.com/garam-masala-cookies/">
+          sel et sucre
+				</a>
+			</h5>
+			<img src="http://www.seletsucre.com/wp-content/uploads/2012/05/garam-masala-cookies.jpg" />
+		</article>
+		<article>
+			<h3>Blueberry Greek Yogurt Bark</h3>
+			<h5>
+				<a href="https://www.fitnessblender.com/articles/delicious-blueberry-greek-yogurt-bark">
+          Fitness Blender
+				</a>
+			</h5>
+			<img src="https://d18zdz9g6n5za7.cloudfront.net/blog/800/800-900-delicious-blueberry-greek-yogurt-bark-a536.jpg" />
+		</article>
+  </section>
+
+	<h2 id="pictures">Pictures</h2>
+	<section>
+		<img src="./media/1.jpg" />
+		<img src="./media/2.jpg" />
+		<img src="./media/3.jpg" />
+		<img src="./media/4.jpg" />
+		<img src="./media/5.jpg" />
+		<img src="./media/6.jpg" />
+		<img src="./media/7.jpg" />
+		<img src="./media/8.jpg" />
+		<img src="./media/9.jpg" />
+		<img src="./media/10.jpg" />
+		<img src="./media/11.jpg" />
+		<img src="./media/12.jpg" />
+		<img src="./media/13.jpg" />
+		<img src="./media/14.jpg" />
+		<img src="./media/15.jpg" />
+		<img src="./media/16.jpg" />
+		<img src="./media/17.jpg" />
+		<img src="./media/18.jpg" />
+		<img src="./media/19.jpg" />
+		<img src="./media/20.jpg" />
+		<img src="./media/21.jpg" />
+		<img src="./media/22.jpg" />
+		<img src="./media/23.jpg" />
+		<img src="./media/24.jpg" />
+		<img src="./media/25.jpg" />
+		<img src="./media/26.jpg" />
+		<img src="./media/27.jpg" />
+		<img src="./media/28.jpg" />
+		<img src="./media/29.jpg" />
+		<img src="./media/30.jpg" />
+		<img src="./media/31.jpg" />
+		<img src="./media/32.jpg" />
+	</section>
+</body>
+
+</html>
